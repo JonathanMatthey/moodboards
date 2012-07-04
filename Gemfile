@@ -7,8 +7,10 @@ gem 'rails', '3.2.6'
 
 gem "paperclip", "~> 3.0"
 
-gem 'pg'
-# gem 'sqlite3'
+gem 'execjs'
+
+# gem 'pg'
+gem 'sqlite3'
 
 
 # Gems used only for assets and not required
