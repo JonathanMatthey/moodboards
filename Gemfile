@@ -9,8 +9,8 @@ gem "paperclip", "~> 3.0"
 
 gem 'execjs'
 
-# gem 'pg'
-gem 'sqlite3'
+gem 'pg'
+# gem 'sqlite3'
 
 
 # Gems used only for assets and not required
