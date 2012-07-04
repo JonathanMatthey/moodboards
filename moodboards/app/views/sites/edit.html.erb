@@ -1,0 +1,17 @@
+<h1>Editing site</h1>
+
+<%= form_for @site, :url => site_path, :html => { :multipart => true } do |f| %>
+
+	<%= f.label :url %><br />
+	<%= f.text_field :url, :class=>"form_text_field" %><br />
+<br /><br />
+<%= image_tag @site.screenshot.url %><br />
+<%= image_tag @site.screenshot.url(:medium) %><br />
+<%= image_tag @site.screenshot.url(:thumb) %><br />
+<br /><br />
+	<%= f.file_field :screenshot %><br /><br />
+    <%= f.submit 'Update', :class=>"form_button" %>
+<% end %>
+
+<%= link_to 'Show', @site %> |
+<%= link_to 'Back', sites_path %>

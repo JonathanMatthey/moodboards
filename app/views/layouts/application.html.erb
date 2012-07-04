@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moodboards</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav><h1>moodboards</h1> <%= link_to '+', new_site_path, :class=>"new-site" %></nav>
+
+<div id="content">
+	<%= yield %>
+</div>
+
+</body>
+</html>

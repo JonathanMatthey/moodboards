@@ -1,0 +1,13 @@
+<h1>New site</h1>
+
+
+<%= form_for @site, :url => { :action => "create" }, :html => { :multipart => true } do |f| %>
+
+	<%= f.label :url %><br />
+	<%= f.text_field :url, :class=>"form_text_field" %><br />
+
+	<%= f.file_field :screenshot %><br /><br />
+    <%= f.submit 'Create', :class=>"form_button" %>
+<% end %>
+
+<%= link_to 'Back', sites_path %>
