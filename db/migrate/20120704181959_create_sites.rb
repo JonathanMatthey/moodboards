@@ -7,5 +7,4 @@ class CreateSites < ActiveRecord::Migration
       t.timestamps
     end
   end
-  add_index :sites, :board_id
 end

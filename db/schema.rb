@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20120704185635) do
 
   create_table "sites", :force => true do |t|
     t.string   "url"
+    t.integer  "board_id"
     t.datetime "created_at",              :null => false
     t.datetime "updated_at",              :null => false
     t.string   "screenshot_file_name"
