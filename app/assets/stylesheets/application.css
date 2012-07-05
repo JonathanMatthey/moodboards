@@ -59,3 +59,9 @@ a.new-site:hover{
 #content{
   padding-top:20px;
 }
+
+select#boards{
+  float:right;
+  margin-right:20px;
+  margin-top:4px;
+}
